@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/login.css" >
+</head>
+<body>
+   <section>
+    <form action="#">
+     <div class="container">
+       <div class="logo-title">
+           <img src="/media/userIcon.webp" alt="userIcon" class="user-logo">
+           <h1>Login Page</h1>
+        </div>
+        <div class="login-page">
+            <label for="username"><span class="req" style="color: rgb(243, 17, 17); font-size: x-small;">*</span>User Name:</label>
+            <input type="text" id="username" name="username"  placeholder="Enter your Name" pattern="[A-Za-z0-9]{3, }" title="Match the pattern" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your e-mail" name="email" required><br><br>
+
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" placeholder="Enter valid password" name="password" required pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{6,}" title="Must contain uppercase, lowercase, number, min 8 chars"><br><br>
+
+            <button  type="submit" class="btn">Submit</button>
+        </div>
+     </div>
+    </form>
+   </section>
+</body>
+</html>
